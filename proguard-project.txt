@@ -1,0 +1,221 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+#-libraryjars /libs/testinagent-v1.4.jar
+#-dontwarn com.testin.agent.**
+#-keep class com.testin.agent.** {*;}
+
+#-keep class com.xgd.ncbtc.view.** {*;}
+#-keep class com.xgd.ncbtc.relltime.sever.** {*;}
+
+#-libraryjars libs/viewflow.jar
+#-dontwarn org.taptwo.android.widget.**
+#-keep class org.taptwo.android.widget.** {*;}
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+#-keep class * implements java.io.Serializable {
+#  public static final java.io.Serializable$Creator *;
+#}
+
+-keep public class * implements java.io.Serializable {  
+    public *;  
+}  
+
+#-keepclassmembers class * implements java.io.Serializable {
+#    static final long serialVersionUID;
+##    private static final java.io.ObjectStreamField[] serialPersistentFields;
+#    private void writeObject(java.io.ObjectOutputStream);
+#    private void readObject(java.io.ObjectInputStream);
+#    java.lang.Object writeReplace();
+#    java.lang.Object readResolve();
+#}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep public class * extends android.widget.TextView {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+-keep class cn.beevideo.live.** { *; }
+
+-keep public interface com.mipt.store.metro.download.IDownloadService
+-dontnote com.mipt.store.metro.download.IDownloadService
+-keep public interface com.mipt.store.metro.download.IDownloadCallback
+-dontnote com.mipt.store.metro.download.IDownloadCallback
+-keep public interface com.mipt.store.metro.download.DownloadItem
+-dontnote com.mipt.store.metro.download.DownloadItem
+
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { *; }
+-keep interface android.content.pm.** { *; }
+-keep class android.content.pm.** { *; }
+-keep class com.mipt.store.metro.pm.** { *; }
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Fragment
+
+-keep public class * extends android.app.FrameLayout
+
+#-libraryjars libs/picasso-2.3.4.jar
+#-dontwarn com.squareup.picasso.**
+#-keep class com.squareup.picasso.** { *; }
+
+-libraryjars libs/gson-2.0.jar 
+-keep class com.google.gson.stream.** { *; }  
+-keep class com.google.gson.examples.android.model.** { *; }   
+-keep class com.google.gson.** { *;}  
+
+
+-dontwarn android.view.**
+
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** v(...);
+    public static *** i(...);
+}
+
+-libraryjars libs/umeng-analytics-v5.4.2.jar
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-libraryjars libs/umeng-fb-v4.3.2.jar
+-libraryjars libs/umeng-update-v2.6.0.1.jar
+-keep class com.umeng.** { *; }    
+-keep class com.umeng.analytics.** { *; }    
+-keep class com.umeng.common.** { *; }    
+-keep class com.umeng.newxp.** { *; }    
+
+
+#-libraryjars libs/okhttp-1.6.0.jar
+#-dontwarn com.squareup.okhttp.**
+
+#-libraryjars libs/okhttp-urlconnection-1.6.0.jar
+
+
+-keep class mediaplayer.** { *; }
+-keep class mipt.media.** { *; }
+-dontwarn mediaplayer.**
+
+#-libraryjars libs/mipt_client_support_3.8.jar
+
+-keep class com.mipt.device.**{*;}
+
+#-keepclassmembers class cn.beevideo.live.ui.LiveMediaActivity$InJavaScriptLocalObj {
+#  public *;
+#}
+-keepattributes *Annotation*
+-keepattributes *JavascriptInterface*
+
+-keep class com.networkbench.** { *; }
+
+-dontwarn com.networkbench.**
+
+-keepattributes Exceptions, Signature, InnerClasses
+
+
+
+
+
+-dontshrink
+-dontoptimize
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.umeng.**
+
+-libraryjars libs/SocialSDK_QQZone_2.jar
+
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.tencent.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keep class com.umeng.scrshot.**
+-keep public class com.tencent.** {*;}
+-keep class com.umeng.socialize.sensor.**
+
+-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+
+-keep public class [assembly.stone.itassembly].R$*{
+    public static final int *;
+}
+
+#所有实体类所在包  
+-keep class assembly.stone.itassembly.baiduvarious.entity.**{ *; } 
+-keep class assembly.stone.itassembly.guokr.entity.**{ *; }  
+-keep class assembly.stone.itassembly.animetaste.entity.**{ *; }  
+-keep class assembly.stone.itassembly.huxiu.entity.**{ *; }  
+-keep class assembly.stone.itassembly.leiphone.entity.**{ *; }  
+
+

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="assembly.stone.itassembly.leiphone.ui.LeiPhoneFragment" >
+
+    <assembly.stone.itassembly.wedget.swiptlistview.BaseSwipeRefreshLayout
+        android:id="@+id/lswipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <assembly.stone.itassembly.wedget.BaseListView
+            android:id="@+id/llistview"
+            style="@style/baseList_style" />
+    </assembly.stone.itassembly.wedget.swiptlistview.BaseSwipeRefreshLayout>
+
+    <include layout="@layout/loading_progress" />
+
+    <include layout="@layout/load_err" />
+
+</RelativeLayout>

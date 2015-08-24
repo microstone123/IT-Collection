@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="0.0px" >
+
+    <include
+        android:id="@+id/tupian_main"
+        layout="@layout/second_title" />
+
+    <RelativeLayout
+        android:id="@+id/jiu_relative"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tupian_main" >
+
+        <include layout="@layout/wallstreetcn_item" />
+    </RelativeLayout>
+
+    <include layout="@layout/loading_progress" />
+
+</RelativeLayout>

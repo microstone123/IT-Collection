@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/category_tab_highlight_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/main_top_left" >
+
+        <assembly.stone.itassembly.util.CategoryTabStrip
+            android:id="@+id/tab_strip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_height"
+            android:layout_marginRight="20dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingLeft="6.0dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tab_strip_rigth" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/framelayout_err_connet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

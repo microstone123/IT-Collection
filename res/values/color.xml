@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="addembl_cor">#E6E6E6</color>
+    <color name="radio_cor">#EEEEEE</color>
+    <color name="radio_tvcor">#787878</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="reply_text_bg">#91272525</color>
+    <color name="animetaste_detail_cor">#E8E8E0</color>
+    <color name="top_bar_background">#ffeeeeee</color>
+    <color name="divider">#ffdddddd</color>
+    <color name="adr_book_cor">#444444</color>
+
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="various_black">#DDDDDD</drawable>
+
+    <color name="fengchi_logo">#AAA5A5</color>
+    <color name="add_addr_item">#1E1E1E</color>
+    <color name="home_list_item_color">#1D1D1D</color>
+    <color name="line_bottom_color">#CDD3D3D3</color>
+    <color name="black">#000000</color>
+    <color name="lighter_gray">#ffd3d3d3</color>
+    <color name="gray">#ff808080</color>
+    <color name="line_img">#C8C8C8</color>
+    <color name="item_click_cor">#F0F0F0</color>
+    <color name="write_time_cor">#B4B4B4</color>
+    <color name="video_bag">#36000000</color>
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#A2A3A2</color>
+    <color name="list_divider">#f1f1e8</color>
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <color name="activity_bg_color">#fffafafa</color>
+    <color name="top_category_bar_background">#ffeeeeee</color>
+    <color name="category_tab_text">#ff707070</color>
+    <color name="category_tab_text_dark">#fffafafa</color>
+    <color name="category_tab_highlight_text">#fffafafa</color>
+    <color name="category_tab_highlight_text_dark">#ffd43d3d</color>
+    <color name="category_tab_highlight_bg">#C519B6B6</color>
+    <color name="category_tab_highlight_d_bg">#AAE6FFFF</color>
+    <color name="category_tab_highlight_dark_bg">#fffafafa</color>
+    <color name="ncbtc_bg">#2A2D36</color>
+    <color name="reply_bg">#D3E5E5E5</color>
+    <color name="light_black">#565656</color>
+    <color name="share_bg">#EFEFEF</color>
+    <color name="share_view_bg">#8D8D8D</color>
+    <color name="reply_ed_bg">#DCDCDC</color>
+    <color name="update_text_cor">#626262</color>
+    <color name="update_btn_cor">#F0F0F0</color>
+
+</resources>

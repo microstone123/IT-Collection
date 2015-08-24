@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tupian_main"
+        layout="@layout/second_title" />
+
+    <assembly.stone.itassembly.wedget.BaseWebView
+        android:id="@+id/pic_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relat_share_layout"
+        android:layout_below="@id/tupian_main"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollbarSize="@dimen/listview_scrollbar_width"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+    <include layout="@layout/load_err" />
+
+    <include layout="@layout/loading_progress" />
+
+    <RelativeLayout
+        android:id="@+id/relat_share_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/share_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

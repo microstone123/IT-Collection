@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <assembly.stone.itassembly.wedget.BaseWebView
+        android:id="@+id/pic_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollbarSize="@dimen/listview_scrollbar_width"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height" >
+
+        <RelativeLayout
+            android:id="@+id/the_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/category_tab_highlight_bg" >
+
+            <TextView
+                android:id="@+id/secondTitleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_back_img"
+                android:gravity="center"
+                android:includeFontPadding="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/loading_progress" />
+
+    <include layout="@layout/load_err" />
+
+</RelativeLayout>

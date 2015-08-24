@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="assembly.stone.itassembly.wallstreet.ui.WallstreetFragment" >
+
+    <RelativeLayout
+        android:id="@+id/the_animetaste"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="品味动画，重拾梦想! "
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/type_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/anime_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="3dp"
+                android:text="剧情"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/anime_img"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/anime_type"
+                android:paddingBottom="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <assembly.stone.itassembly.wedget.swiptlistview.BaseSwipeRefreshLayout
+        android:id="@+id/aswipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/the_animetaste" >
+
+        <assembly.stone.itassembly.wedget.BaseListView
+            android:id="@+id/alistview"
+            style="@style/baseList_style" />
+    </assembly.stone.itassembly.wedget.swiptlistview.BaseSwipeRefreshLayout>
+
+    <include layout="@layout/loading_progress" />
+
+    <include layout="@layout/load_err" />
+
+</RelativeLayout>

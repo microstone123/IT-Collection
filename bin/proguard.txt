@@ -1,0 +1,112 @@
+# view res/layout/activity_guide_adapter.xml #generated:7
+# view res/layout/activity_main.xml #generated:38
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class assembly.stone.itassembly.animetaste.ui.AnimetasteDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class assembly.stone.itassembly.animetaste.ui.AnimetasteWebVideoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class assembly.stone.itassembly.baiduvarious.ui.VariousDetailActivity { <init>(...); }
+
+# view res/layout/swipe_head.xml #generated:9
+-keep class assembly.stone.itassembly.baiduvarious.ui.VariousHeadFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class assembly.stone.itassembly.base.ui.GuideActivity { <init>(...); }
+
+# view res/layout/newsdetail_imagepager.xml #generated:7
+-keep class assembly.stone.itassembly.base.ui.HackyViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class assembly.stone.itassembly.base.ui.ITApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class assembly.stone.itassembly.base.ui.ImagePagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class assembly.stone.itassembly.base.ui.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class assembly.stone.itassembly.base.ui.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class assembly.stone.itassembly.broadcast.ConnectionChangeReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class assembly.stone.itassembly.guokr.ui.GuoKrDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class assembly.stone.itassembly.huxiu.ui.HuXiuDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class assembly.stone.itassembly.leiphone.ui.LeiPhoneDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class assembly.stone.itassembly.setting.ui.AboutUsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class assembly.stone.itassembly.setting.ui.PersonalCustomizateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class assembly.stone.itassembly.setting.ui.ShareSoftwareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class assembly.stone.itassembly.setting.ui.fb.ConversationActivity { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:16
+-keep class assembly.stone.itassembly.util.CategoryTabStrip { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class assembly.stone.itassembly.wallstreet.ui.WallstreetDetailActivity { <init>(...); }
+
+# view res/layout/animetaste_detail.xml #generated:95
+-keep class assembly.stone.itassembly.wedget.AnimeRecomListView { <init>(...); }
+
+# view res/layout/fragment_animetaste.xml #generated:59
+# view res/layout/fragment_guokr.xml #generated:15
+# view res/layout/fragment_huxiu.xml #generated:15
+# view res/layout/fragment_leiphone.xml #generated:14
+-keep class assembly.stone.itassembly.wedget.BaseListView { <init>(...); }
+
+# view res/layout/animet_web_detail.xml #generated:8
+# view res/layout/various_detail.xml #generated:12
+-keep class assembly.stone.itassembly.wedget.BaseWebView { <init>(...); }
+
+# view res/layout/fragment_animetaste.xml #generated:53
+# view res/layout/fragment_guokr.xml #generated:10
+# view res/layout/fragment_huxiu.xml #generated:10
+# view res/layout/fragment_jiu3000.xml #generated:10
+# view res/layout/fragment_leiphone.xml #generated:9
+# view res/layout/fragment_various.xml #generated:9
+-keep class assembly.stone.itassembly.wedget.swiptlistview.BaseSwipeRefreshLayout { <init>(...); }
+
+# view res/layout/fragment_various.xml #generated:14
+-keep class assembly.stone.itassembly.wedget.swiptlistview.VariousSwipeListView { <init>(...); }
+
+# view res/layout/pic_turns.xml #generated:13
+-keep class assembly.stone.itassembly.wedget.viewflow.CircleFlowIndicator { <init>(...); }
+
+# view res/layout/pic_turns.xml #generated:7
+-keep class assembly.stone.itassembly.wedget.viewflow.TurnsViewFlow { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class assembly.stone.itassembly.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+

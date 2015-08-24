@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_font_size">14sp</dimen>
+    <dimen name="listview_scrollbar_width">2dp</dimen>
+    <dimen name="main_height">40dip</dimen>
+    <dimen name="second_title_top">45dp</dimen>
+    <dimen name="various_head_height">150dp</dimen>
+
+    <!-- Various -->
+    <dimen name="swipelistview_margintop">48dp</dimen>
+    <dimen name="text_size_top">18sp</dimen>
+    <dimen name="various_item_height">80dp</dimen>
+    <dimen name="various_item_width">100dp</dimen>
+    <dimen name="various_item_marginright">10dp</dimen>
+    <dimen name="category_tab_text">16.0sp</dimen>
+    <dimen name="top_height">45.0dip</dimen>
+    <dimen name="main_top_left">5.0dip</dimen>
+    <dimen name="main_top_right">3.0dip</dimen>
+    <dimen name="animetaste_detail_video">200.0dip</dimen>
+
+</resources>
