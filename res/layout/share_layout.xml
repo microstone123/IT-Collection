@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px" 
+        android:background="@color/share_view_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/share_bg" >
+
+        <TextView
+            android:id="@+id/share_to_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="分享到" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/share_to_tx"
+            layout="@layout/share_type" />
+    </RelativeLayout>
+
+</LinearLayout>

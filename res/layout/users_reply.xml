@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <TextView
+        android:id="@+id/user_chat_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/user_chat_time_text"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/user_logo" />
+
+    <RelativeLayout
+        android:id="@+id/chat_relat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_chat_time_text"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/user_img"
+        android:layout_toStartOf="@id/user_img" >
+
+        <LinearLayout
+            android:id="@+id/line_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp" >
+
+            <TextView
+                android:id="@+id/user_reply_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outgoing"
+                android:maxEms="13"
+                android:paddingLeft="8dp"
+                android:paddingRight="18dp"
+                android:paddingTop="8dp"
+                android:text="dfgfdhfhf"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

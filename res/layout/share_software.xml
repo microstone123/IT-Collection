@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tupian_main"
+        layout="@layout/second_title" />
+
+    <RelativeLayout
+        android:id="@+id/code_relat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tupian_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/share_bg" >
+
+        <ImageView
+            android:id="@+id/code_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sky_code" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/share_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/code_relat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/share_text"
+        android:textColor="@color/adr_book_cor"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/share_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_tv"
+        android:layout_centerHorizontal="true"
+        android:text="@string/share_text2"
+        android:textColor="@color/adr_book_cor"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/share_img"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/share_tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line_bottom" />
+
+    <TextView
+        android:id="@+id/share_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/share_img"
+        android:layout_below="@id/share_img"
+        android:layout_marginLeft="15dp"
+        android:text="@string/share_to_test"
+        android:textColor="@color/adr_book_cor"
+        android:textSize="13sp" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/share_test"
+        android:layout_alignRight="@id/share_img"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/share_test"
+        layout="@layout/share_type" />
+
+</RelativeLayout>

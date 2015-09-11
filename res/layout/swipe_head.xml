@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/various_head_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/addembl_cor"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/picfragment"
+        android:name="assembly.stone.itassembly.baiduvarious.ui.VariousHeadFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/various_head_height" />
+    
+
+</LinearLayout>

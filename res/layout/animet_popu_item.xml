@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/category_tab_highlight_bg" >
+
+    <TextView
+        android:id="@+id/animet_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/story_mode"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seep_relat"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/video_bag"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/video_btn"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/video_pause"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="5" >
+
+        <SeekBar
+            android:id="@+id/vod_player_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:max="100"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:progressDrawable="@drawable/progress_holo_light"
+            android:thumb="@drawable/detail_icon_schedule_ball" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/vod_player_seekbar"
+            android:layout_below="@id/vod_player_seekbar"
+            android:layout_marginRight="10dp"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/arrow_img"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_tip_bg"
+            android:scaleType="center"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/assembly.stone.itassembly"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <assembly.stone.itassembly.wedget.viewflow.TurnsViewFlow
+        android:id="@+id/viewflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </assembly.stone.itassembly.wedget.viewflow.TurnsViewFlow>
+
+    <assembly.stone.itassembly.wedget.viewflow.CircleFlowIndicator
+        android:id="@+id/viewflowindic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/viewflow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:padding="1dip"
+        app:activeColor="#35A164"
+        app:activeType="fill"
+        app:circleSeparation="15dip"
+        app:inactiveColor="#E6E6E6"
+        app:inactiveType="fill"
+        app:radius="3dip" />
+
+</RelativeLayout>
